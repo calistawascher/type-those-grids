@@ -1,144 +1,33 @@
 html {
   box-sizing: border-box;
-  line-height: 1.5;
   font-family: Merriweather, serif;
+  line-height: 1.5;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
+}
+img {
+  width: 100%;
+}
+body {
+  margin: 0;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  position: relative;
-  bottom: 100px;
-}
-
-h1 {
-  font-family: Merriweather, serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 1.8rem;
-  padding: 0;
-  margin-top: 0;
-  padding-left: 1rem;
-}
-
-body {
-  min-width: 100%;
-  margin: 0;
-  padding: 0;
   grid-template-areas:
-    "header"
-    "main";
+  "banner banner banner"
+  "col1 col2 col3";
+  gap: .75em;
 }
 
-header {
-  padding-top: 1.5rem;
-  grid-area: header;
-  padding-bottom: 0;
+.banner {
+  grid-area: banner;
 }
 
-header figure {
-  margin: 0;
-  padding: 0;
-  margin-top: 1rem;
-  align-self: auto;
-  position: relative;
-  bottom: 10px;
-}
-
-.mainimage {
-  width: auto;
-  display: inline-block;
-}
-
-.mainimage img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-header p {
-  font-family: Merriweather, serif;
+.banner-text {
+  grid-area: banner;
+  align-self: end;
   color: white;
-  font-weight: lighter;
-  font-size: 1.5rem;
-  font-style: italic;
-  position: relative;
-  bottom: 115px;
-  padding-left: 1rem;
-}
-
-header figcaption {
-  position: relative;
-  bottom: 140px;
-  color: white;
-  font-weight: lighter;
-  font-family: Merriweather, serif;
-  padding-left: 1rem;
-}
-
-main figure {
-  padding: 0;
-  margin: 0;
-  gap: .75rem;
-  width: auto;
-  display: inline-block;
-}
-
-.artemis img {
-  width: 100%;
-  height: auto;
-  border-bottom: 0;
-  position: relative;
-  bottom: 12px;
-  padding-right: .75rem;
-}
-
-.rhodes img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 12px;
-  padding-right: .375rem;
-}
-
-.gardens img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 12px;
-  padding-left: .375rem;
-}
-
-h2 {
-  font-family: Merriweather, serif;
-  font-style: italic;
-  font-weight: lighter;
-  position: relative;
-  padding-left: 1rem;
-  bottom: 18px;
-}
-
-dt {
-  font-family: Merriweather, serif;
-  padding-left: 1rem;
-  font-size: 1rem;
-  font-style: italic;
-  position: relative;
-  bottom: 38px;
-  font-weight: normal;
-}
-
-dd {
-  font-family: Merriweather, serif;
-  padding-left: 1rem;
-  font-size: 1rem;
-  position: relative;
-  bottom: 38px;
-  right: 5px;
-  font-weight: normal;
 }
