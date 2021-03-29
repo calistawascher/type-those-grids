@@ -1,2 +1,144 @@
-font-family: 'Merriweather', serif; /*regular*/
-font-family: 'Merriweather', serif; /*italic*/
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: Merriweather, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  bottom: 100px;
+}
+
+h1 {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.8rem;
+  padding: 0;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+body {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
+header {
+  padding-top: 1.5rem;
+  grid-area: header;
+  padding-bottom: 0;
+}
+
+header figure {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  align-self: auto;
+  position: relative;
+  bottom: 10px;
+}
+
+.mainimage {
+  width: auto;
+  display: inline-block;
+}
+
+.mainimage img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header p {
+  font-family: Merriweather, serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  font-style: italic;
+  position: relative;
+  bottom: 115px;
+  padding-left: 1rem;
+}
+
+header figcaption {
+  position: relative;
+  bottom: 140px;
+  color: white;
+  font-weight: lighter;
+  font-family: Merriweather, serif;
+  padding-left: 1rem;
+}
+
+main figure {
+  padding: 0;
+  margin: 0;
+  gap: .75rem;
+  width: auto;
+  display: inline-block;
+}
+
+.artemis img {
+  width: 100%;
+  height: auto;
+  border-bottom: 0;
+  position: relative;
+  bottom: 12px;
+  padding-right: .75rem;
+}
+
+.rhodes img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 12px;
+  padding-right: .375rem;
+}
+
+.gardens img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 12px;
+  padding-left: .375rem;
+}
+
+h2 {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-weight: lighter;
+  position: relative;
+  padding-left: 1rem;
+  bottom: 18px;
+}
+
+dt {
+  font-family: Merriweather, serif;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  position: relative;
+  bottom: 38px;
+  font-weight: normal;
+}
+
+dd {
+  font-family: Merriweather, serif;
+  padding-left: 1rem;
+  font-size: 1rem;
+  position: relative;
+  bottom: 38px;
+  right: 5px;
+  font-weight: normal;
+}
